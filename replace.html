@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JS REPLACE METHOD</h1>
+      <p>Replace "Microsoft" with "GOOGLE" in the paragraph below:</p>
+        <button onclick="myFunction()">CLICK</button>
+        <p id="demo">Please vist Microsoft</p>
+        <br>
+        <button onclick="myFUnction()">CLICK</button>
+        <p id="Demo">Please vist Microsoft and Microsoft</p>
+        <script>
+            function myFunction(){
+                let text=document.getElementById("demo").innerHTML;
+                document.getElementById("demo").innerHTML= text.replace("Microsoft","Google");
+            }
+            function myFUnction(){
+                let text=document.getElementById("Demo").innerHTML;
+                document.getElementById("Demo").innerHTML= text.replace(/Microsoft/g,"Google");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>RE-DECLARING THE VARIALBLES</p>
+        <p id="demo"></p>
+        <script>
+            let x=2; //here x is 2
+            {
+                let x=10; //here x is 10
+            }
+            // here x is 2
+            document.getElementById("demo").innerHTML=x;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+   //method 1 <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo"></p>
+    /*method 2*/<button onclick="this.innerHTML=Date()">CLICK</button>
+  //method 3  <button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+</html>
